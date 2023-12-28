@@ -11,5 +11,5 @@ if (user) {
   document.querySelector(".userName").innerText = `${user}`;
 } else {
   document.querySelector(".userName").innerText = ``;
-  window.location.href = "http://127.0.0.1:5500/";
+  window.location.href = "../index.html";
 }
