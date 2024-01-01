@@ -189,8 +189,7 @@ logBtn.addEventListener("click", function () {
         // set new key for the currentuser in localstorage
         localStorage.setItem("currentUser", i.name);
 
-        location.href =
-          "https://ammarashraf98.github.io/login-system/home.html";
+        window.open("https://ammarashraf98.github.io/login-system/home.html");
 
         // window.open(
         //   "https://ammarashraf98.github.io/login-system/pages/home.html"
