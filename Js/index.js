@@ -38,8 +38,6 @@ if (localStorage.getItem("users") !== null) {
   getUsers();
 }
 
-let user = localStorage.getItem("currentUser");
-
 let usersMail = [];
 
 for (const i of Data) {
@@ -189,11 +187,14 @@ logBtn.addEventListener("click", function () {
         // set new key for the currentuser in localstorage
         localStorage.setItem("currentUser", i.name);
 
+        // // set the location to home page after login
         // window.open("https://ammarashraf98.github.io/login-system/home.html");
 
-        window.open(
-          "https://ammarashraf98.github.io/login-system/pages/home.html"
-        );
+        // window.open(
+        //   "https://ammarashraf98.github.io/login-system/pages/home.html"
+        // );
+        window.location.replace("home.html");
+
         errLogin.innerHTML = ``;
         return;
       } else {
@@ -202,3 +203,11 @@ logBtn.addEventListener("click", function () {
     }
   }
 });
+
+
+// 
+let currentUser = localStorage.getItem("currentUser");
+
+if (currentUser) {
+  window.location.replace("home.html");
+}

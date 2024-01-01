@@ -8,6 +8,7 @@ logout.addEventListener("click", function (e) {
 if (user) {
   document.querySelector(".userName").innerText = `${user}`;
 } else {
-  window.open("https://ammarashraf98.github.io/index.html");
+  // window.open("https://ammarashraf98.github.io/index.html");
+  window.location.replace("index.html");
   document.querySelector(".userName").innerText = ``;
 }
