@@ -189,7 +189,7 @@ logBtn.addEventListener("click", function () {
         // set new key for the currentuser in localstorage
         localStorage.setItem("currentUser", i.name);
 
-        location.href = "../pages/home.html";
+        location.href = "pages/home.html";
         errLogin.innerHTML = ``;
         return;
       } else {
@@ -198,4 +198,3 @@ logBtn.addEventListener("click", function () {
     }
   }
 });
-

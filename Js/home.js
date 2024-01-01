@@ -8,6 +8,6 @@ logout.addEventListener("click", function (e) {
 if (user) {
   document.querySelector(".userName").innerText = `${user}`;
 } else {
-  window.location.href = "../index.html";
+  window.open = "index.html";
   document.querySelector(".userName").innerText = ``;
 }
