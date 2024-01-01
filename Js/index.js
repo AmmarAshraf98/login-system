@@ -110,7 +110,7 @@ function validateName(x) {
     return true;
   } else {
     errName.innerHTML = ``;
-    errName.innerHTML = `<span> invalid name </span>`;
+    errName.innerHTML = `<span> Please start with [A - Z]</span>`;
     return false;
   }
 }
@@ -121,7 +121,7 @@ function validatePass() {
     errPass.innerHTML = ``;
     return true;
   } else {
-    errPass.innerHTML = `<span>use strong password</span>`;
+    errPass.innerHTML = `<span>Please use strong password</span>`;
     return false;
   }
 }
@@ -172,13 +172,13 @@ function getUsers() {
 
 // login inputs check and action
 // email
-logMail.addEventListener("blur", function (e) {
-  //   console.log(e.target.value);
-});
+// logMail.addEventListener("blur", function (e) {
+//   //   console.log(e.target.value);
+// });
 
-logPass.addEventListener("blur", function (e) {
-  //   console.log(e.target.value);
-});
+// logPass.addEventListener("blur", function (e) {
+//   //   console.log(e.target.value);
+// });
 
 logBtn.addEventListener("click", function () {
   if (logMail.value === "" || logPass === "") {
@@ -189,12 +189,13 @@ logBtn.addEventListener("click", function () {
         // set new key for the currentuser in localstorage
         localStorage.setItem("currentUser", i.name);
 
-        window.location.href = "../pages/home.html";
+        location.href = "../pages/home.html";
         errLogin.innerHTML = ``;
         return;
       } else {
-        errLogin.innerHTML = `<span> this email or password not valid </span>`;
+        errLogin.innerHTML = `<p class="text-center"> this email or password not valid </p>`;
       }
     }
   }
 });
+
