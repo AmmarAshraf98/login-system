@@ -189,7 +189,8 @@ logBtn.addEventListener("click", function () {
         // set new key for the currentuser in localstorage
         localStorage.setItem("currentUser", i.name);
 
-        location.href = "pages/home.html";
+        // location.href = "https://ammarashraf98.github.io/home.html";
+        window.open("https://ammarashraf98.github.io/home.html");
         errLogin.innerHTML = ``;
         return;
       } else {
