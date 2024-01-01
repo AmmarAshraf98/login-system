@@ -190,7 +190,7 @@ logBtn.addEventListener("click", function () {
         localStorage.setItem("currentUser", i.name);
 
         // location.href = "https://ammarashraf98.github.io/home.html";
-        window.open("https://ammarashraf98.github.io/home.html");
+        window.open("https://ammarashraf98.github.io/pages/home.html");
         errLogin.innerHTML = ``;
         return;
       } else {
